@@ -4,15 +4,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.menu.MenuBuilder;
-import android.support.v7.view.menu.MenuPresenter;
-import android.support.v7.widget.ActionMenuView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
+import androidx.appcompat.view.menu.MenuPresenter;
+import androidx.appcompat.widget.ActionMenuView;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 
 import com.afollestad.appthemeengine.ATE;
 import com.afollestad.appthemeengine.ATEMenuPresenterCallback;
@@ -86,8 +88,8 @@ public class ToolbarProcessor implements Processor<Toolbar, Menu> {
                 // Search view theming
                 if (item.getActionView() != null &&
                         (item.getActionView() instanceof android.widget.SearchView ||
-                                item.getActionView() instanceof android.support.v7.widget.SearchView)) {
-                    Processor processor = ATE.getProcessor(android.support.v7.widget.SearchView.class);
+                                item.getActionView() instanceof SearchView)) {
+                    Processor processor = ATE.getProcessor(SearchView.class);
                     if (processor != null)
                         processor.process(context, key, item.getActionView(), tintColor);
                 }

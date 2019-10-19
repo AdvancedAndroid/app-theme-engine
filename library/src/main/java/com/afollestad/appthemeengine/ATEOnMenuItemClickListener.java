@@ -1,8 +1,9 @@
 package com.afollestad.appthemeengine;
 
 import android.app.Activity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import androidx.appcompat.widget.Toolbar;
 
 /**
  * @author Daniel Ciao (plusCubed)

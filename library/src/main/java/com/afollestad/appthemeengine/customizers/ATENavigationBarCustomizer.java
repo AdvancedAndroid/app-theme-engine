@@ -1,6 +1,7 @@
 package com.afollestad.appthemeengine.customizers;
 
-import android.support.annotation.ColorInt;
+
+import androidx.annotation.ColorInt;
 
 /**
  * @author Aidan Follestad (afollestad)

@@ -1,6 +1,7 @@
 package com.afollestad.appthemeengine.customizers;
 
-import android.support.annotation.StyleRes;
+
+import androidx.annotation.StyleRes;
 
 /**
  * @author Aidan Follestad (afollestad)
