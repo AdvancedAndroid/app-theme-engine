@@ -2,8 +2,6 @@ package com.afollestad.appthemeengine;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -22,6 +20,8 @@ import com.afollestad.appthemeengine.processors.ScrollViewProcessor;
 import com.afollestad.appthemeengine.processors.SearchViewProcessor;
 import com.afollestad.appthemeengine.processors.TabLayoutProcessor;
 import com.afollestad.appthemeengine.processors.ToolbarProcessor;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.HashMap;
 

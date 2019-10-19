@@ -6,13 +6,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.view.Menu;
 import android.view.View;
 
 import com.afollestad.appthemeengine.ATE;
 import com.afollestad.appthemeengine.Config;
 import com.afollestad.appthemeengine.util.Util;
+import com.google.android.material.navigation.NavigationView;
 
 /**
  * @author Aidan Follestad (afollestad)

@@ -13,8 +13,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.TabLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.BaseMenuPresenter;
@@ -27,12 +25,15 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ListView;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import com.afollestad.appthemeengine.customizers.ATEActivityThemeCustomizer;
 import com.afollestad.appthemeengine.customizers.ATETaskDescriptionCustomizer;
 import com.afollestad.appthemeengine.processors.Processor;
 import com.afollestad.appthemeengine.util.Util;
 import com.afollestad.appthemeengine.views.PreMadeView;
 import com.afollestad.materialdialogs.internal.ThemeSingleton;
+import com.google.android.material.tabs.TabLayout;
 
 import java.lang.reflect.Field;
 

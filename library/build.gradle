@@ -1,17 +1,19 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
 
     lintOptions {
         abortOnError false
     }
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        renderscriptTargetApi 29
+        renderscriptSupportModeEnabled true
         versionCode 1
-        versionName "0.6.0"
+        versionName "0.7.0"
     }
     buildTypes {
         release {
@@ -19,11 +21,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
-    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
-    compile 'com.afollestad.material-dialogs:commons:0.9.0.2'
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompatVersion"
+    implementation "com.google.android.material:material:$rootProject.androidXsupportLibVersion"
+    implementation 'com.afollestad.material-dialogs:core:0.9.0.2'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.0.2'
 }

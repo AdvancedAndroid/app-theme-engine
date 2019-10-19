@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuBuilder;
 import android.support.v7.view.menu.MenuPresenter;
@@ -21,6 +20,7 @@ import com.afollestad.appthemeengine.ATEOnMenuItemClickListener;
 import com.afollestad.appthemeengine.Config;
 import com.afollestad.appthemeengine.util.TintHelper;
 import com.afollestad.appthemeengine.util.Util;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.lang.reflect.Field;
 

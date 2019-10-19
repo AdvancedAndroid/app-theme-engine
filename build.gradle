@@ -1,14 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     repositories {
+        google()
         jcenter()
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
 allprojects {
+
     repositories {
+        google()
         jcenter()
         maven { url "https://jitpack.io" }
     }
@@ -16,4 +25,24 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 19
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.2"
+
+    // App dependencies
+    androidXMultiDexVersion = '2.0.1'
+    androidXsupportLibVersion = '1.0.0'
+    retrofitVersion = '2.3.0'
+    okHttp3Version = '3.9.0'
+
+    appcompatVersion="1.1.0"
+    androidXVersion="2.1.0"
+    /*Test*/
+    espressoVersion="3.1.1"
+    androidXTest="1.1.1"
 }

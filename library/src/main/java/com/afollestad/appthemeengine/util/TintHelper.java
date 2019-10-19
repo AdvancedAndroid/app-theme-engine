@@ -12,7 +12,6 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.FloatRange;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.widget.AppCompatEditText;
@@ -29,6 +28,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.afollestad.appthemeengine.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * @author afollestad, plusCubed
